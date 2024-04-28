@@ -1,0 +1,23 @@
+.card-image{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: black;
+}
+
+.restaurant-container {
+  text-align: center;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  height: 100vh;
+  width: 100vw;
+   
+}
+
+.card-text {
+  
+  text-align: left;
+  font-size: 15px;
+  font-weight: 50;
+  color: black;
+}
