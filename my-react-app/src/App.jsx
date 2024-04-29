@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Card from "./Card";
+import Searchbox from "./Searchbox";
 
 function App() {
   return (
@@ -11,17 +12,16 @@ function App() {
         <div className="nav-bar">
           <h1>SipScore</h1>
         </div>
-        <h1>Find the Best Cafe Near You!</h1>
-        <input
-          type="text"
-          className="search-box"
-          placeholder="Search for restaurants..."
-        />
-        <button className="search-button">Search</button>
+        <h1>find the best cafe in town</h1>
+        
+        <Searchbox />
+        
       </div>
 
       <div className="restaurant-container">
         <h2>Recently Reviewed Restaurants</h2>
+        <Card />
+        <Card />
         <Card />
         <Card />
         <Card />
