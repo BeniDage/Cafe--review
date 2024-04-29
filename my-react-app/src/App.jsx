@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Card from "./Card";
 import Searchbox from "./Searchbox";
+import Comment from "./Comment";
 
 function App() {
   return (
@@ -19,13 +20,21 @@ function App() {
       </div>
 
       <div className="restaurant-container">
-        <h2>Recently Reviewed Restaurants</h2>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <div className="restaurant-headline">
+          <h2>Recently Reviewed Restaurants</h2>
+        </div>
+        <div className="card-table">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <div className="comment-div">
+          <Comment/>
+        </div>
       </div>
     </div>
   );

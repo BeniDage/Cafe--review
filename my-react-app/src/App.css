@@ -37,29 +37,48 @@ body {
   font-size: 38px;
   font-weight: 700;
   letter-spacing: -0 px;
-  line-height: 60px;
+  line-height: 70px;
   width: 100%;
 
 }
 
 .restaurant-container {
-  text-align: center;
-  justify-content: space-around;
-  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(246, 244, 242);
   height: 20%;
-  width: 100vw;
-  
-  
-}
-
-.restaurant {
-  display: inline-block;
-  width: 200px;
-  margin: 10px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-  border-radius: 10px;
-  color: #000;
-}
-
+  width: 100%;
  
+  
+}
+
+.restaurant-headline{
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.card-table {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust min and max width as needed */
+  grid-gap: 20px; /* Adjust the gap between cards */
+  justify-content: center;
+  /* horizontally aligns grid items in the center */
+  gap: 30px; /* adds space between grid items */
+  padding: 20px; /* adds padding around the grid */
+  
+  
+}
+
+.comment-div{
+
+  background-color: blueviolet;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+}
