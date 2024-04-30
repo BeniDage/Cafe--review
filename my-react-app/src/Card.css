@@ -1,23 +1,72 @@
 .card-image{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    background-color: black;
+  background-image: url("./assets/cafeimage.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  background-color: black;
+  border-radius: 25px;
+  padding: 0; 
+  transition: transform 0.3s ease-in-out; /* added this line */
 }
 
-.restaurant-container {
-  text-align: center;
-  justify-content: space-around;
-  background-color: antiquewhite;
-  height: 100vh;
+.card-image:hover {
+  transform: scale(1.1); /* added this line */
+}
+
+.card-text-container {
+  display: inline-block;
+  text-align: left;
   width: 100%;
+  height: 30%;
+  font-size: 20px;
+  font-weight: 50;
+  
+  
+}
+
+.card-text-div{
+  margin-top: 12px;
+  overflow: hidden;
+  
+}
+
+.cafe-shop-name{
+  font-size: 30px;
+  font-weight: 700;
+  color: #323131;
+  
+  padding: 0px 10px;
+}
+
+.review-rate{
+  font-size: 20px;
+  font-weight: 500;
+  color: #323131;
+  padding: 5px 10px;
+  
+}
+
+.cafe-address{
+  font-size: 20px;
+  font-weight: 500;
+  color: #323131;
+  padding: 5px 10px;
+  
+}
+
+.restaurant { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: 500px;
+  background-color: rgba(251, 250, 250, 0); /* Semi-transparent white background */
+  border-radius: 10px;
+  padding-bottom: 10px;
    
 }
 
-.card-text {
-  
-  text-align: left;
-  font-size: 15px;
-  font-weight: 50;
-  color: black;
-}

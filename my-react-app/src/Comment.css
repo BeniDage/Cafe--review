@@ -1,0 +1,111 @@
+/* Styles for the comment container */
+.comment-container {
+  width: 80%;
+  background-color: rgb(163, 255, 127);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+/* Styles for the comment form */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #006767;
+  width: 80%;
+  max-height: 500px;
+  
+
+}
+
+.comment-form textarea {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: none;
+  font-size: 25px;
+  font-family:Arial, sans-serif;
+  outline: none;
+}
+
+.comment-form button {
+  background-color: #212221;
+  width: 200px;
+  font-size: 25px;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.comment-form button:hover {
+  background-color: #3c3d3d;
+}
+
+/* Styles for individual comments */
+.comment {
+  background-color: #f3f6f3;
+  width: 70vw;
+  height: auto;
+  overflow: hidden;
+  margin: 10px;
+  font-size: 24px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-wrap: break-word; 
+  color: #212221;
+  padding: 10px;
+
+}
+
+.comment p {
+  margin: 0;
+}
+
+.comment-container .comment-form label {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.comment-container .comment-form input[type="radio"] {
+  display: none;
+}
+
+.star{
+  content: url("./assets/blank-star.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.gold-star{
+  content: url("./assets/gold-star.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.star-rating-div{
+  background-color: #fafafa;
+  display: flex;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input[type="radio"] {
+  display: none; /* hide the radio buttons */
+}
+
+
+
+input[type="radio"]:checked ~ label img,
+input[type="radio"]:checked ~ label ~ label img {
+  content: url("./assets/gold-star.svg"); /* change the image of the selected stars */
+}
+
+
