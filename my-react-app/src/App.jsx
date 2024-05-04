@@ -14,9 +14,8 @@ function App() {
           <h1>SipScore</h1>
         </div>
         <h1>find the best cafe in town</h1>
-        
+
         <Searchbox />
-        
       </div>
 
       <div className="restaurant-container">
@@ -33,7 +32,7 @@ function App() {
           <Card />
         </div>
         <div className="comment-div">
-          <Comment/>
+          <Comment />
         </div>
       </div>
     </div>

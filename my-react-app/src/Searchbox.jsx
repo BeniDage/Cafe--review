@@ -43,25 +43,7 @@ function Searchbox() {
         />
         <div className="search-icon" onClick={handleSearch}></div>
       </div>
-      <div className="cafe-list">
-        {cafes.map((cafe) => (
-          <div className="cafe" key={cafe.place_id}>
-            <h3>{cafe.name}</h3>
-            <p>{cafe.formatted_address}</p>
-            {cafe.rating && <p>Rating: {cafe.rating}</p>}
-            {cafe.reviews && (
-              <ul>
-                {cafe.reviews.map((review, index) => (
-                  <li key={index}>
-                    <p>{review.text}</p>
-                    <p>Rating: {review.rating}</p>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
-      </div>
+     
     </div>
   );
 }
